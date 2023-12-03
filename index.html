@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodwaGon</title>
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- owl  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- owl  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.svg" alt="logo">
+                <span class="text-1000 fs-3 fw-bold ms-2 text-gradient">foodwaGon</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p class="mb-0 fw-bold text-lg-center">Deliver to: <i class="fa-solid fa-location-dot"></i>
+                                <span>Preet Vihar</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn-group searchbtn" role="group" aria-label="Basic example">
+                    <input style="margin-left: 5px;" type="text" placeholder="Search" aria-label="Search"
+                        class="searchinput">
+                    <i class="fa-solid fa-magnifying-glass searchicon m-2 center"></i>
+                </div>
+                <div class="nav-item pt-2 pt-lg-0">
+                    <button type="button" class="btn btn-warning ms-lg-3 login-btn text-light fw-bold">
+                        <i class="fa-solid fa-user text-center"></i>&nbsp;LOGIN </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid bg-primary py-5 overflow-hidden">
+        <div class="container">
+            <div class="row flex-center">
+                <div class="col-md-5 col-lg-6 order-0 order-md-1 mt-8 mt-md-0">
+                    <a class="img-landing-banner" href="#">
+                        <img style=" max-width: 77%;" class="img-fluid" src="./assets/img/hero-header.png"
+                            alt="hero-header">
+                    </a>
+                </div>
+                <div class="col-md-7 col-lg-6 py-8 text-md-start text-center">
+                    <h5 class="display-1 fs-md-5 fs-lg-6 fs-xl-8 text-light headertext">Are you starving?</h5>
+                    <h5 class="text-800 mb-5 headertext2">Within a few clicks, find meals that <br
+                            class="d-none d-xxl-block">areaccessible near you </h5>
+                    <div class="card w-xxl-75">
+                        <div class="card-body">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active mb-3" id="nav-home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                        aria-selected="true">
+                                        <svg class="svg-inline--fa fa-motorcycle fa-w-20 me-2" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="motorcycle" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M512.9 192c-14.9-.1-29.1 2.3-42.4 6.9L437.6 144H520c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24h-45.3c-6.8 0-13.3 2.9-17.8 7.9l-37.5 41.7-22.8-38C392.2 68.4 384.4 64 376 64h-80c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h66.4l19.2 32H227.9c-17.7-23.1-44.9-40-99.9-40H72.5C59 104 47.7 115 48 128.5c.2 13 10.9 23.5 24 23.5h56c24.5 0 38.7 10.9 47.8 24.8l-11.3 20.5c-13-3.9-26.9-5.7-41.3-5.2C55.9 194.5 1.6 249.6 0 317c-1.6 72.1 56.3 131 128 131 59.6 0 109.7-40.8 124-96h84.2c13.7 0 24.6-11.4 24-25.1-2.1-47.1 17.5-93.7 56.2-125l12.5 20.8c-27.6 23.7-45.1 58.9-44.8 98.2.5 69.6 57.2 126.5 126.8 127.1 71.6.7 129.8-57.5 129.2-129.1-.7-69.6-57.6-126.4-127.2-126.9zM128 400c-44.1 0-80-35.9-80-80s35.9-80 80-80c4.2 0 8.4.3 12.5 1L99 316.4c-8.8 16 2.8 35.6 21 35.6h81.3c-12.4 28.2-40.6 48-73.3 48zm463.9-75.6c-2.2 40.6-35 73.4-75.5 75.5-46.1 2.5-84.4-34.3-84.4-79.9 0-21.4 8.4-40.8 22.1-55.1l49.4 82.4c4.5 7.6 14.4 10 22 5.5l13.7-8.2c7.6-4.5 10-14.4 5.5-22l-48.6-80.9c5.2-1.1 10.5-1.6 15.9-1.6 45.6-.1 82.3 38.2 79.9 84.3z">
+                                            </path>
+                                        </svg> Delivery </button>
+                                    <button class="nav-link mb-3" id="nav-profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-profile" type="button" role="tab"
+                                        aria-controls="nav-profile" aria-selected="false">
+                                        <svg class="svg-inline--fa fa-shopping-bag fa-w-14 me-2" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="shopping-bag" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z">
+                                            </path>
+                                        </svg> Pickup </button>
+                                </div>
+                            </nav>
+                            <div class="tab-content mt-3" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <form class="row gx-2 gy-2 align-items-center">
+                                        <div class="col">
+                                            <div
+                                                class="input-group-icon d-flex align-items-center justify-content-start gap-2">
+                                                <svg class="svg-inline--fa fa-map-marker-alt fa-w-12 text-danger input-box-icon"
+                                                    aria-hidden="true" focusable="false" data-prefix="fas"
+                                                    data-icon="map-marker-alt" role="img"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                                    </path>
+                                                </svg>
+                                                <label class="visually-hidden" for="inputDelivery">Address</label>
+                                                <input class="form-control input-box form-foodwagon-control"
+                                                    id="inputDelivery" type="text" placeholder="Enter Your Address">
+                                            </div>
+                                        </div>
+                                        <div class="d-grid gap-3 col-sm-auto">
+                                            <button class="btn btn-danger" type="submit">Find Food </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">
+                                    <form class="row gx-4 gy-2 align-items-center">
+                                        <div class="col">
+                                            <div
+                                                class="input-group-icon d-flex justify-content-start align-items-center gap-2">
+                                                <svg class="svg-inline--fa fa-map-marker-alt fa-w-12 text-danger input-box-icon"
+                                                    aria-hidden="true" focusable="false" data-prefix="fas"
+                                                    data-icon="map-marker-alt" role="img"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                                    </path>
+                                                </svg>
+                                                <label class="visually-hidden" for="inputPickup">Address</label>
+                                                <input class="form-control input-box form-foodwagon-control"
+                                                    id="inputPickup" type="text" placeholder="Enter Your Address">
+                                            </div>
+                                        </div>
+                                        <div class="d-grid gap-3 col-sm-auto">
+                                            <button class="btn btn-danger" type="submit">Find Food</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row h-100 gx-2">
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-2 pt-2">
+                <div class="card card-span h-100">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-3 w-100" src="./assets/img/discount-item-1.png" alt="...">
+                        <div class="card-actions">
+                            <div class="badge badge-foodwagon bg-primary p-4">
+                                <div class="d-flex flex-between-center">
+                                    <div class="text-white fs-1">15</div>
+                                    <div class="d-block text-white fs-5"> % <br>
+                                        <div class="fw-normal fs-5 mt-2">Off</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold text-1000 text-truncate">Flat Hill Slingback</h5>
+                        <span class="badge bg-soft-danger py-2 px-3">
+                            <span class="fs-5 text-danger">6 days Remaining</span>
+                        </span>
+                    </div>
+                    <a class="stretched-link" href="#"></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-2 pt-2">
+                <div class="card card-span h-100">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-3 w-100" src="./assets/img/discount-item-2.png" alt="...">
+                        <div class="card-actions">
+                            <div class="badge badge-foodwagon bg-primary p-4">
+                                <div class="d-flex flex-between-center">
+                                    <div class="text-white fs-1">10</div>
+                                    <div class="d-block text-white fs-5"> % <br>
+                                        <div class="fw-normal fs-5 mt-2">Off</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold text-1000 text-truncate">Ocean Blue Ring</h5>
+                        <span class="badge bg-soft-danger py-2 px-3">
+                            <span class="fs-5 text-danger">5 days Remaining</span>
+                        </span>
+                    </div>
+                    <a class="stretched-link" href="#"></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-2 pt-2">
+                <div class="card card-span h-100">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-3 w-100" src="./assets/img/discount-item-3.png" alt="...">
+                        <div class="card-actions">
+                            <div class="badge badge-foodwagon bg-primary p-4">
+                                <div class="d-flex flex-between-center">
+                                    <div class="text-white fs-1">25</div>
+                                    <div class="d-block text-white fs-5"> % <br>
+                                        <div class="fw-normal fs-5 mt-2">Off</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold text-1000 text-truncate">Brown Leathered Wallet</h5>
+                        <span class="badge bg-soft-danger py-2 px-3">
+                            <span class="fs-5 text-danger">7 days Remaining</span>
+                        </span>
+                    </div>
+                    <a class="stretched-link" href="#"></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-2 pt-2">
+                <div class="card card-span h-100">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-3 w-100" src="./assets/img/discount-item-4.png" alt="...">
+                        <div class="card-actions">
+                            <div class="badge badge-foodwagon bg-primary p-4">
+                                <div class="d-flex flex-between-center">
+                                    <div class="text-white fs-1">15</div>
+                                    <div class="d-block text-white fs-5"> % <br>
+                                        <div class="fw-normal fs-5 mt-2">Off</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold text-1000 text-truncate">Silverside Wristwatch</h5>
+                        <span class="badge bg-soft-danger py-2 px-3">
+                            <span class="fs-5 text-danger">6 days Remaining</span>
+                        </span>
+                    </div>
+                    <a class="stretched-link" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-0 bg-primary-gradient">
+        <div class="container">
+            <div class="row justify-content-center g-0">
+                <div class="col-xl-9">
+                    <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+                        <h5 class="fw-bold text-danger fs-3 fs-lg-5 lh-sm my-5">How does it work</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 mb-6">
+                            <div class="text-center">
+                                <img class="shadow-icon" src="./assets/img/location.png" height="112" alt="...">
+                                <h5 class="mt-4 fw-bold">Select location</h5>
+                                <p class="mb-md-0">Choose the location where your food will be delivered.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 mb-6">
+                            <div class="text-center">
+                                <img class="shadow-icon" src="./assets/img/order.png" height="112" alt="...">
+                                <h5 class="mt-4 fw-bold">Choose order</h5>
+                                <p class="mb-md-0">Check over hundreds of menus to pick your favorite food</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 mb-6">
+                            <div class="text-center">
+                                <img class="shadow-icon" src="./assets/img/pay.png" height="112" alt="...">
+                                <h5 class="mt-4 fw-bold">Pay advanced</h5>
+                                <p class="mb-md-0">It's quick, safe, and simple. Select several methods of payment </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 mb-6">
+                            <div class="text-center">
+                                <img class="shadow-icon" src="./assets/img/meals.png" height="112" alt="...">
+                                <h5 class="mt-4 fw-bold">Enjoy meals</h5>
+                                <p class="mb-md-0">Food is made and delivered directly to your home.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 overflow-hidden">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-lg-7 mx-auto text-center mt-7 mb-5">
+                    <h5 class="fw-bold fs-3 fs-lg-5 lh-sm">Popular items</h5>
+                </div>
+                <div class="col-12">
+                    <div id="biplab-carousal" class="owl-carousel owl-theme">
+                        <div class="card item">
+                            <img src="./assets/img/cheese-burger.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate mb-1">Cheese Burger </h5>
+                                <div>
+                                    <span class="text-warning me-2">
+                                        <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="text-warning">Burger Arena</span>
+                                </div>
+                                <span class="text-1000 fw-bold">$3.88</span>
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-lg btn-danger fw-bold" href="#OrderNow" role="button">Order now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card item">
+                            <img src="./assets/img/toffes-cake.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate mb-1">Toffe's Cake</h5>
+                                <div>
+                                    <span class="text-warning me-2">
+                                        <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="text-warning">Top Sticks</span>
+                                </div>
+                                <span class="text-1000 fw-bold">$4.00 </span>
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-lg btn-danger fw-bold" href="#OrderNow" role="button">Order now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card item">
+                            <img src="./assets/img/dancake.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate mb-1">Dancake </h5>
+                                <div>
+                                    <span class="text-warning me-2">
+                                        <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="text-warning">Cake World</span>
+                                </div>
+                                <span class="text-1000 fw-bold">$1.99</span>
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-lg btn-danger fw-bold" href="#OrderNow" role="button">Order now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card item">
+                            <img src="./assets/img/crispy-sandwitch.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate mb-1">Crispy Sandwitch </h5>
+                                <div>
+                                    <span class="text-warning me-2">
+                                        <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="text-warning">Fastfood Dine</span>
+                                </div>
+                                <span class="text-1000 fw-bold">$3.00</span>
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-lg btn-danger fw-bold" href="#OrderNow" role="button">Order now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card item">
+                            <img src="./assets/img/thai-soup.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate mb-1">Thai Soup</h5>
+                                <div>
+                                    <span class="text-warning me-2">
+                                        <svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="text-warning">Foody Man</span>
+                                </div>
+                                <span class="text-1000 fw-bold">$2.79</span>
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-lg btn-danger fw-bold" href="#OrderNow" role="button">Order now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+                <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-4 mt-5">Featured Restaurants</h5>
+            </div>
+        </div>
+        <div class="row gx-2">
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/food-world.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">20% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/food-world-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Food world</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">46</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-danger p-2">
+                            <span class="fw-bold fs-5 text-danger pointer">Opens Tomorrow</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/pizza-hub.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">10% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/pizzahub-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Pizza hub</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">40</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-danger p-2">
+                            <span class="fw-bold fs-5 text-danger">Opens Tomorrow</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/donuts-hut.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">15% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/donuts-hut-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Donuts hut</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">20</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-success p-2">
+                            <span class="fw-bold fs-5 text-success">Open Now</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/donuthut.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">15% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/donut-hut-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Donuts hut</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">50</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-success p-2">
+                            <span class="fw-bold fs-5 text-success">Open Now</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/ruby-tuesday.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">10% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/ruby-tuesday-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Ruby tuesday</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">50</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-success p-2">
+                            <span class="fw-bold fs-5 text-success">Open Now</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/kuakata.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">10% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/kuakata-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Kuakata Fried Chicken</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">50</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-success p-2">
+                            <span class="fw-bold fs-5 text-success">Open Now</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/red-square.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">10% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/red-square-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Kuakata Fried Chicken</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">50</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-success p-2">
+                            <span class="fw-bold fs-5 text-success">Open Now</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+                <div class="card card-span h-100 text-white rounded-3">
+                    <img class="img-fluid rounded-3 h-100" src="./assets/img/taco-bell.png" alt="...">
+                    <div class="card-img-overlay ps-0">
+                        <span class="badge bg-danger p-2 ms-3">
+                            <svg class="svg-inline--fa fa-tag fa-w-16 me-2 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">10% off</span>
+                        </span>
+                        <span class="badge bg-primary ms-2 me-1 p-2">
+                            <svg class="svg-inline--fa fa-clock fa-w-16 me-1 fs-0" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z">
+                                </path>
+                            </svg>
+                            <span class="fs-0">Fast</span>
+                        </span>
+                    </div>
+                    <div class="card-body ps-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="./assets/img/taco-bell-logo.png" alt="">
+                            <div class="flex-1 ms-3">
+                                <h5 class="mb-0 fw-bold text-1000">Taco bell</h5>
+                                <span class="text-warning fs--1 me-1">
+                                    <svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="mb-0 text-warning">50</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-soft-success p-2">
+                            <span class="fw-bold fs-5 text-success">Open Now</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <a class="btn btn-lg btn-warning text-light fw-bold ps-3 pe-3" href="#View-All-btn"> View All <svg
+                        class="svg-inline--fa fa-chevron-right fa-w-10 ms-2 text-light" aria-hidden="true"
+                        focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="py-8 mb-md-5 overflow-hidden">
+        <div class="container">
+            <div class="row flex-center mb-6">
+                <div class="col-lg-7">
+                    <h5 class="fw-bold fs-3 fs-lg-5 lh-sm text-center text-lg-start">Search by Food</h5>
+                </div>
+                <div class="col-lg-5 text-lg-end text-center">
+                    <a class="btn btn-lg text-800 me-2" href="##" role="button"> VIEW ALL <svg
+                            class="svg-inline--fa fa-chevron-right fa-w-10 ms-2" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="biplab-search-food" class="owl-carousel owl-theme">
+                <div class="rounded-circle item">
+                    <img src="./assets/img/search-pizza.png" class="img-fluid rounded-circle" alt="...">
+                    <h5 class="fw-bold pt-3 text-center">pizza</h5>
+                </div>
+                <div class="rounded-circle item">
+                    <img src="./assets/img/burger.png" class="img-fluid rounded-circle" alt="...">
+                    <h5 class="fw-bold pt-3 text-center">Burger</h5>
+                </div>
+                <div class="rounded-circle item">
+                    <img src="./assets/img/noodles.png" class="img-fluid rounded-circle" alt="...">
+                    <h5 class="fw-bold pt-3 text-center">Noodles</h5>
+                </div>
+                <div class="rounded-circle item">
+                    <img src="./assets/img/sub-sandwich.png" class="img-fluid rounded-circle" alt="...">
+                    <h5 class="fw-bold pt-3 text-center">Sub-sandwiches</h5>
+                </div>
+                <div class="rounded-circle item">
+                    <img src="./assets/img/chowmein.png" class="img-fluid rounded-circle" alt="...">
+                    <h5 class="fw-bold pt-3 text-center">Chowmein</h5>
+                </div>
+                <div class="rounded-circle item">
+                    <img src="./assets/img/steak.png" class="img-fluid rounded-circle" alt="...">
+                    <h5 class="fw-bold pt-3 text-center">Steak</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="app-promotion">
+        <div class="bg-holder"
+            style="background-image:url(assets/img/cta-one-bg.png);background-position:center;background-size:cover;">
+        </div>
+        <div class="container" style="position: relative; z-index: 33; overflow: hidden;">
+            <div class="row justify-content-center">
+                <div class="col-xxl-10">
+                    <div class="card card-span shadow-warning" style="border-radius: 35px;">
+                        <div class="card-body py-5">
+                            <div class="row justify-content-evenly">
+                                <div class="col-md-3">
+                                    <div
+                                        class="d-flex d-md-block d-xl-flex justify-content-evenly justify-content-lg-between">
+                                        <img src="assets/img/discounts.png" width="100" alt="...">
+                                        <div class="d-flex d-lg-block d-xl-flex flex-center">
+                                            <h5 class="fw-bolder text-1000 mb-0 text-gradient">Daily<br
+                                                    class="d-none d-md-block">Discounts </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 hr-vertical">
+                                    <div
+                                        class="d-flex d-md-block d-xl-flex justify-content-evenly justify-content-lg-between">
+                                        <img src="assets/img/live-tracking.png" width="100" alt="...">
+                                        <div class="d-flex d-lg-block d-xl-flex flex-center">
+                                            <h5 class="fw-bolder text-1000 mb-0 text-gradient">Live Tracking</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 hr-vertical">
+                                    <div
+                                        class="d-flex d-md-block d-xl-flex justify-content-evenly justify-content-lg-between">
+                                        <img src="assets/img/quick-delivery.png" width="100" alt="...">
+                                        <div class="d-flex d-lg-block d-xl-flex flex-center">
+                                            <h5 class="fw-bolder text-1000 mb-0 text-gradient">Quick Delivery </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-center mt-md-8">
+                <div class="col-lg-5 d-none d-lg-block">
+                    <img class="w-100" src="assets/img/phone-cta-one.png" alt="...">
+                </div>
+                <div class="col-lg-5 mt-7 mt-md-0">
+                    <h5 class="text-warning fw-bold">Install the app</h5>
+                    <p>It's never been easier to order food. Look for the finest <br class="d-none d-xl-block">discounts
+                        and
+                        you'll be lost in a world of delectable food.</p>
+                    <a class="pe-2" href="https://www.apple.com/app-store/" target="_blank">
+                        <img src="assets/img/app-store.svg" width="160" alt="">
+                    </a>
+                    <a href="https://play.google.com/store/apps" target="_blank">
+                        <img src="assets/img/google-play.svg" width="160" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-span mb-3 shadow-lg">
+                        <div class="card-body py-0">
+                            <div class="row justify-content-center">
+                                <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1">
+                                    <img class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0"
+                                        src="./assets/img/crispy-sandwiches.png" alt="...">
+                                </div>
+                                <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                                    <h5 class="card-title mt-xl-5 mb-4">
+                                        Best deals <span class="text-warning">
+                                            Crispy
+                                            Sandwiches</span>
+                                    </h5>
+                                    <p class="fs-5">Enjoy
+                                        the large size of
+                                        sandwiches. Complete
+                                        your meal with
+                                        the perfect slice of
+                                        sandwiches. </p>
+                                    <div class="d-grid bottom-0">
+                                        <a class="btn btn-lg btn-warning mt-xl-6 text-light fw-bold" href="##!">
+                                            PROCEED TO ORDER
+                                            <svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-2" aria-hidden="true"
+                                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                                data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-span mb-3 shadow-lg">
+                        <div class="card-body py-0">
+                            <div class="row justify-content-center">
+                                <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-md-0">
+                                    <img class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-start rounded-md-top-0"
+                                        src="./assets/img/fried-chicken.png" alt="...">
+                                </div>
+                                <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                                    <h5 class="card-title mt-xl-5 mb-4">
+                                        Celebrate parties
+                                        with <span class="text-warning">Fried
+                                            Chicken</span>
+                                    </h5>
+                                    <p class="fs-5">Get the
+                                        best fried chicken
+                                        smeared with a lip
+                                        smacking lemon
+                                        chili flavor. Check
+                                        out best deals for
+                                        fried chicken. </p>
+                                    <div class="d-grid bottom-0">
+                                        <a class="btn btn-lg btn-warning mt-xl-6 text-light fw-bold" href="##!">
+                                            PROCEED TO ORDER
+                                            <svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-2" aria-hidden="true"
+                                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                                data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-span mb-3 shadow-lg">
+                        <div class="card-body py-0">
+                            <div class="row justify-content-center">
+                                <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1">
+                                    <img class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0"
+                                        src="./assets/img/pizza.png" alt="...">
+                                </div>
+                                <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                                    <h5 class="card-title mt-xl-5 mb-4">
+                                        Wanna eat hot &amp;
+                                        <span class="text-warning">spicy
+                                            Pizza?</span>
+                                    </h5>
+                                    <p class="fs-5">Pair up
+                                        with a friend and
+                                        enjoy the hot and
+                                        crispy pizza
+                                        pops. Try it with
+                                        the best deals. </p>
+                                    <div class="d-grid bottom-0">
+                                        <a class="btn btn-lg btn-warning fw-bold text-light mt-xl-6"
+                                            href="#OrderNow-spicy-Pizza">
+                                            PROCEED TO ORDER
+                                            <svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-2" aria-hidden="true"
+                                                focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                                data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-0">
+        <div class="bg-holder"
+            style="background-image:url(assets/img/cta-two-bg.png);background-position:center;background-size:cover; ">
+        </div>
+        <div class="container" style="position: relative; z-index: 56;">
+            <div class="row flex-center">
+                <div class="col-xxl-12 py-7 text-center">
+                    <h5 class="fw-bold mb-custom-4 text-white fs-unknown-6">
+                        Are you ready to order <br>with the
+                        best deals?
+                    </h5>
+                    <a class="btn btn-danger fw-bold" href="#PROCEED">
+                        PROCEED TO ORDER
+                        <svg class="svg-inline--fa fa-chevron-right fa-w-10 ms-2" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New  -->
+    <section class="py-0 pt-5 bg-1000">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <h5 class="lh-lg fw-bold text-white">OUR TOP CITIES</h5>
+                <div class="col-6 col-md-4 col-lg-auto mb-3">
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">San Francisco</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Miami</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">San Diego</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">East Bay</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Long Beach</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-auto mb-3">
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Los Angeles</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Washington DC</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Seattle</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Portland</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Nashville</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-auto mb-3">
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">New York City</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Orange County</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Atlanta</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Charlotte</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Denver</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-auto mb-3">
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Chicago</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Phoenix</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Las Vegas</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Sacramento</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Oklahoma City</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-auto mb-3">
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Columbus</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">New Mexico</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Albuquerque</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Sacramento</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">New Orleans</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-900">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-3">
+                    <h5 class="lh-lg fw-bold text-white">COMPANY</h5>
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">About Us</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Team</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Careers</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3">
+                    <h5 class="lh-lg fw-bold text-white">CONTACT</h5>
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Help &amp; Support</a>
+                        </li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Partner with us </a>
+                        </li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Ride with us</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Ride with us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3">
+                    <h5 class="lh-lg fw-bold text-white">LEGAL</h5>
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Terms &amp;
+                                Conditions</a>
+                        </li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Refund &amp;
+                                Cancellation</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Privacy Policy</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3">
+                    <h5 class="lh-lg fw-bold text-white">LEGAL</h5>
+                    <ul class="list-unstyled mb-md-4 mb-lg-0">
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Terms &amp;
+                                Conditions</a>
+                        </li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Refund &amp;
+                                Cancellation</a></li>
+                        <li class="lh-lg"><a class="text-200 text-decoration-none" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-start align-items-center">
+                <div class="col col-md-6 ">
+                    <h5 class="lh-lg fw-bold text-500">FOLLOW US</h5>
+                    <div class="text-start my-3">
+                        <a href="#">
+                            <svg class="svg-inline--fa fa-instagram fa-w-14 fs-2 me-2" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="instagram" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#BDBDBD"
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="svg-inline--fa fa-facebook fa-w-16 fs-2 mx-2" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="facebook" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#BDBDBD"
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="svg-inline--fa fa-twitter fa-w-16 fs-2 mx-2" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="twitter" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#BDBDBD"
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-100">
+                        <h3 class="text-500 my-4 fs-4 text-start">Receive exclusive offers and <br> discounts in your
+                            mailbox</h3>
+                    </div>
+                    <div class="row input-group-icon mb-5 d-flex justify-content-start align-items-center">
+                        <div
+                            class="w-100 col-auto d-flex justify-content-start align-items-center gap-2 w-md-100 w-lg-100">
+                            <svg style="font-size: 38px;"
+                                class="svg-inline--fa fa-envelope fa-w-16 input-box-icon text-500 ms-3"
+                                aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                                </path>
+                            </svg>
+                            <input class="w-100 form-control input-box bg-800 border-0" type="email"
+                                placeholder="Enter Email" aria-label="email">
+                            <button class="btn btn-warning fw-bold text-light type=" submit">Subscribe</button>
+
+                        </div>
+                        <!-- <div class="col-auto w-100 d-flex justify-content-md-center justify-content-lg-start"> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6040451971153!2d77.2928000754799!3d28.641626975659694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb507cc3731f%3A0x8b4409c79b7c6cf9!2sMetro%20Station%20Preet%20Vihar%2C%20Preet%20Vihar%20Metro%20Station%2C%20Vikas%20Marg%2C%20Block%20F%2C%20Preet%20Vihar%2C%20Delhi%2C%20110092!5e0!3m2!1sen!2sin!4v1690014791335!5m2!1sen!2sin"
+                        style="border:0; width: 100%; height: 100%; height: 450px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <hr class="border border-800">
+        <div class="container">
+            <div class="row flex-center pb-3">
+                <div class="col-md-6 order-0">
+                    <p class="text-200 text-center text-md-start">All rights Reserved © Your Company, 2023</p>
+                </div>
+                <div class="col-md-6 order-1">
+                    <p class="text-200 text-center text-md-end"> Made with&nbsp;
+                        <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                            fill="#FFB30E" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z">
+                            </path>
+                        </svg>&nbsp;by&nbsp;<a class="text-200 fw-bold" href="#" target="_blank">BIPLAB ROY
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+    <!-- New  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/owl.js"></script>
+</body>
+
+</html>
